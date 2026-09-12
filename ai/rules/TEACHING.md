@@ -14,10 +14,13 @@ Ders: MYO, BPP2001, ~3 × 50+ dakika, kalabalık sınıf. Udemy tarzı: anlat �
 
 ## Dil
 
-- Anlatım Türkçe; `docs/` metni öğrenciye verilebilir (şifreli öğretmen notu değil)
+- Anlatım, öğrenciyle paylaşılabilecek nitelikte kurumsal, profesyonel ve akademik Türkçe ile hazırlanır
+- İmla, noktalama ve yazım kurallarına eksiksiz uyulur; devrik ve konuşma diline özgü cümlelerden kaçınılır
+- Gereksiz yabancı sözcükler yerine doğru Türkçe karşılıkları kullanılır; teknik terim gerekiyorsa Türkçe açıklamasıyla sunulur
+- Ton ciddi, saygın, anlaşılır ve ikna edicidir; mizahi küçümseme veya aşırı samimiyet kullanılmaz
 - Kod tanımlayıcıları İngilizce
 - İHA örneği varsayılan; bir cümleyle “sizin laboratuvar aletiniz de aynı model” denir
-- Tek proje büyür; `Program.cs`’e yığılmaz; haftalık ikinci `.csproj` yok
+- Kök ana proje büyür ve `Program.cs`’e yığılmaz; her haftanın çalışan hali `WeeklySnapshots/` altında karşılaştırma için korunur
 
 ## Yapma
 

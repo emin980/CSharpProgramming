@@ -1,0 +1,1 @@
+namespace CSharpProgramming.Inventory { internal enum EquipmentStatus { Available = 1, Assigned, InMaintenance, Lost } }

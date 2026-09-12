@@ -3,17 +3,16 @@
 **Ürün adı (görünen):** HangarDesk  
 **Çözüm / klasör:** `CSharpProgramming`  
 **Konu:** Görev ve envanter takibi  
-**Teknik:** .NET 8 konsol, tek proje  
-**Kod durumu:** Hafta 2 — `Program.cs` karşılama + temel türler. Menü/zimmet yok. İkinci `.cs` yok.
+**Teknik:** .NET 8 konsol; kökte güncel ana proje + `WeeklySnapshots/` geçmişi  
+**Kod durumu:** 15. Hafta tamamlandı; ayrıca `Hafta-Son` altında kapsamlı dönem sonu uygulaması bulunmaktadır.
 
 ## Şu an
 
-- Aktif hafta: **2**
-- Son iş: Hafta 2 ders notları; `ImplicitUsings`/`Nullable` kapalı; ilk HangarDesk çıktısı
-- Sonraki iş: Hafta 3 (dönüşüm, operatör) — kullanıcı Hafta 2’yi kapadıktan sonra
+- Aktif hafta: **15**
+- Son iş: HangarDeskFinalDb, sürümlü kurulum, güvenlik, iş akışları ve konsol/Windows Forms arayüzleri tamamlandı
+- Sonraki iş: Kullanıcı değerlendirmesi ve isteğe bağlı görsel iyileştirmeler
 
 ## Bilinen kısıtlar
 
-- `Main` dışında metot ve `class` yok
-- `if` / dizi / `ReadLine` yok
-- Klasörler (`Inventory/` …) Hafta 5–6’da
+- Hafta 4–14 için DOCX oluşturulmadı (kullanıcı kararı)
+- Bağlantı dizesi `appsettings.json` üzerinden değiştirilebilir

@@ -1,0 +1,1 @@
+namespace CSharpProgramming.Inventory { internal enum EquipmentType { Drone = 1, Battery, SensorKit, Tool } }

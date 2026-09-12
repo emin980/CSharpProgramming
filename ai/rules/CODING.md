@@ -15,11 +15,12 @@ Hafta 1: **proje kodu yok.** İskelet `Hello, World!` kalır.
 - Yorum: neden; ders notu gibi satır satır “bu bir döngüdür” yazma
 - Sihirli sayı yerine ileride enum/const (kendi haftasında)
 
-## Mimari ve klasörler
+## Mimari, klasörler ve haftalık geçmiş
 
-- Tek konsol projesi, tek `.csproj`
+- Kök dizinde tek güncel konsol projesi
+- `WeeklySnapshots/WeekXX/` altında her tamamlanan haftanın bağımsız çalışan solution/proje kopyası
+- Snapshot oluşturulduktan sonra sonraki hafta kök ana projede geliştirilir; sıfırdan yeniden yazılmaz
 - `Program.cs` = yalnızca `Main` (Hafta 2–4’te geçici olarak ilk örnekler burada, kısa)
-- Haftalık `WeekXX` kod klasörü yok
 - Özellik klasörleri: `Presentation/`, `Inventory/`, `Missions/`, `People/`, `Data/` — ilgili konu anlatılınca
 - Bir sınıf = bir dosya (Hafta 6+); dosya adı tür adıyla aynı
 - Interface, abstract, generic: kendi haftası

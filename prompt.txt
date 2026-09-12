@@ -1,0 +1,318 @@
+C#/.NET ile sıfırdan başlayıp ileri seviyeye kadar ilerleyen, tek bir kapsamlı eğitim projesi hazırlamak istiyorum. Bu proje üniversitede **Nesne Yönelimli Programlama (BPP2001)** dersinde kullanılacak ve dönem boyunca hafta hafta geliştirilecek.
+
+Ders Meslek Yüksekokulu seviyesindedir ve ağırlıklı olarak **İnsansız Hava Aracı Teknikerliği** öğrencilerine verilecektir. Ancak başka bölümlerden öğrenciler de katılabileceği için proje konusu yalnızca İHA'ya özel olmamalıdır. İHA, otonom sistemler, robotik, IoT, akıllı sistemler, günümüz teknolojileri veya benzeri alanlardan yararlanılabilir. Öğrencilerin ilgisini çekecek, modern ama gereksiz derecede karmaşık olmayan bir proje konusu seçilmelidir.
+Dökümantasyonlarda kullanacağın dili şöyle kullan, kurumsal ve profesyonel bir Türkçe ile yazmanı istiyorum. Yazarken şu kurallara dikkat et:Dil Bilgisi: İmla, noktalama ve yazım kurallarına kesinlikle uy.Akıcılık: Devrik cümlelerden kaçın, anlatımı daha akıcı ve anlaşılır hale getir.Kelime Seçimi: Günlük konuşma dilini bırakıp yerine iş dünyasına uygun, profesyonel/akademik kelimeler kullan (Örn: 'yapmak' yerine 'gerçekleştirmek', 'bakmak' yerine 'incelemek').Yabancı Kelimeler: Plaza dili veya İngilizce terimlerin (Örn: feedback, set etmek, toplantıyı organize etmek) yerine doğru Türkçe karşılıklarını (Örn: geri bildirim, belirlemek, toplantıyı düzenlemek) tercih et.Ton: Ciddi, saygın ve ikna edici bir ton kullan.
+## İlk olarak benimle proje fikrini tartış
+
+Bu promptu aldıktan sonra hemen proje oluşturmaya veya kod yazmaya başlama.
+
+Önce benimle:
+* proje adını,
+* proje konusunu,
+* kullanılacak .NET/C# sürümünü,
+* projenin dönem sonunda hangi seviyeye ulaşacağını,
+* öğrenciler açısından ne kadar anlaşılır ve ilgi çekici olacağını
+
+tartış.
+
+Proje adı için benim düşündüğüm örnek:
+
+`C# Programming BeginToAdvance`
+
+Ancak bundan daha iyi, eğitim projesine ve mümkünse proje temasına uygun isimler öner.
+
+Aynı şekilde birkaç farklı proje konusu öner ve avantaj/dezavantajlarını kısaca karşılaştır.
+
+**Ben proje adı ve proje konusunu onaylamadan geliştirmeye başlama.**
+
+---
+
+## Proje yapısı
+Proje Windows ortamında:
+
+`Masaüstü/Projects/CSharpProgramming` 'de boş bir .net projesi oluşturdum onun üzerine ilerlet.
+
+Proje tek bir ana proje olacaktır.
+
+Her hafta farklı bir bağımsız proje oluşturmak yerine aynı proje giderek geliştirilmelidir. Öğrenci dönem boyunca projenin basit bir başlangıçtan daha düzenli ve nesne yönelimli bir yapıya dönüştüğünü görebilmelidir.
+
+Öğrencilerin programlamaya yeni başladığını varsay.
+
+Henüz anlatılmamış bir C# konusunu erken haftalarda kullanma.
+
+Örneğin ilerleyen haftalarda öğretilecek bir özellik, sadece kodu daha kısa veya profesyonel yapmak amacıyla önceki haftalara taşınmamalıdır.
+
+Proje gelişimi **öğrencinin o haftaya kadar öğrendiği konularla sınırlı olmalıdır.**
+
+---
+
+## Eğitim yaklaşımı
+
+Ben bu projeyi büyük bir sınıfta ders anlatırken kullanacağım.
+
+Haftada yaklaşık:
+
+**3 x 50+ dakika**
+
+ders bulunmaktadır.
+
+Bu nedenle içerik yalnızca koddan oluşmamalıdır.
+
+Udemy tarzında öğretici bir yapı istiyorum.
+
+Her hafta mümkün olduğunca:
+
+* konu anlatımı,
+* kavram açıklamaları,
+* örnekler,
+* canlı kodlama bölümleri,
+* öğretmenin sınıfta anlatabileceği notlar,
+* öğrenciye sorulabilecek sorular,
+* yaygın yapılan hatalar,
+* küçük sınıf içi uygulamalar,
+* o haftanın projeye katkısı,
+* ders sonunda özet
+
+bulunmalıdır.
+
+Kodlar anlaşılır ve öğretici olmalıdır.
+
+Clean Code yaklaşımına dikkat et ancak projeyi gereksiz Enterprise mimarisine dönüştürme.
+
+Özellikle zamanla:
+
+* anlamlı isimlendirme,
+* Single Responsibility,
+* kod tekrarını azaltma,
+* metotları doğru sorumluluklara ayırma,
+* sınıfları doğru modelleme,
+* OOP prensipleri,
+* SOLID'e temel seviyede giriş
+
+gibi iyi yazılım geliştirme alışkanlıkları kazandırılmalıdır.
+
+Ancak öğrencinin seviyesine göre ilerle.
+
+---
+
+# AI proje hafızası
+
+Projenin kök dizininde mutlaka düzenli bir:
+
+`ai/`
+
+klasörü oluştur.
+
+Bu klasör AI'ın projeyi sonraki oturumlarda doğru şekilde devam ettirebilmesi için kullanılacaktır.
+
+Rastgele ve birbirini tekrar eden Markdown dosyaları oluşturma.
+
+Mantıklı ve profesyonel bir yapı tasarla.
+
+En azından aşağıdaki ihtiyaçları karşılayacak dosyalar bulunmalıdır:
+
+* AI'ın hangi dosyaları hangi durumda okuyacağını belirleyen bir **dispatcher**
+* projenin mevcut durumunu tutan dosya
+* hangi haftanın tamamlandığını ve hangi haftada olduğumuzu tutan dosya
+* öğrencilerin şimdiye kadar öğrendiği konuları tutan dosya
+* henüz kullanılmaması gereken konuları belirten dosya
+* proje kararlarını tutan dosya
+* roadmap
+* yapılacak işler
+* değişiklik geçmişi
+* kodlama kuralları
+* öğretim kuralları
+* haftalık ilerleme kuralları
+* dokümantasyon kuralları
+
+Dosya isimlerini ve alt klasör yapısını sen profesyonel şekilde tasarlayabilirsin.
+
+Amaç şu soruların kolayca cevaplanabilmesidir:
+
+* Nerede kaldık?
+* Son olarak ne yaptık?
+* Hangi haftadayız?
+* Öğrenci şu anda hangi konuları biliyor?
+* Sonraki adım ne?
+* Şu anda hangi C# özelliklerini kullanabiliriz?
+* Hangi kararları daha önce aldık?
+
+Her hafta sonunda bu AI dokümantasyonu güncellenmelidir.
+
+---
+
+# Ders dokümantasyonu
+
+Projenin içerisinde haftalara ayrılmış bir eğitim dokümantasyonu da oluştur.
+
+Örneğin:
+
+`Week01`, `Week02` ...
+
+gibi düzenli bir yapı kullanılabilir.
+
+Her haftanın dokümantasyonu öğretmenin yaklaşık üç ders saatini doldurmasına yardımcı olacak seviyede olmalıdır.
+
+Ancak gereksiz uzunluk için içerik üretme; konu gerçekten öğretilecek şekilde detaylandırılmalıdır.
+
+---
+
+# Haftalık müfredat
+
+Aşağıdaki liste ana yol haritasıdır.
+
+Bu sıralama tamamen değişmez değildir. Öğrenme açısından eksik olduğunu düşündüğün temel konuları uygun haftalara ekleyebilirsin.
+
+Ancak büyük değişiklik yapmadan önce gerekçesini bana belirt.
+
+### 1. Hafta
+
+C# diline giriş.
+
+Bu hafta teorik olacaktır.
+
+**Proje kodu yazılmayacaktır.**
+
+Bunun yerine kapsamlı bir ders anlatım dokümanı hazırlanmalıdır.
+
+C#, .NET, programlama, algoritma, yazılım geliştirme süreci ve ders boyunca geliştirilecek projenin genel fikri anlatılabilir.
+
+---
+
+### 2. Hafta
+
+CLR, CTS, JIT, IL, .NET çalışma modeli, Assembly, namespace, komut satırı derleyicisi, ilk C# programı, temel veri türleri, değişkenler, değer/reference türleri, object.
+
+---
+
+### 3. Hafta
+
+Tür dönüşümleri, implicit/explicit conversion, checked/unchecked, boxing/unboxing, ToString, Convert, operatörler, operatör önceliği, bitsel ve özel amaçlı operatörler.
+
+---
+
+### 4. Hafta
+
+Koşullar, if/switch, döngüler, for/while/do-while/foreach, break/continue, diziler, çok boyutlu ve düzensiz diziler.
+
+---
+
+### 5. Hafta
+
+System.Array, temel dizi işlemleri, metotlar, parametreler, dönüş değerleri, diziler ve metotlar, değer/reference parametreleri, ref/out.
+
+---
+
+### 6. Hafta
+
+Metot overloading, method signature, params, recursive metotlar, Main, sınıflara giriş, nesne oluşturma, sınıf metotları ve this.
+
+---
+
+### 7. Hafta
+
+Sınıf üyeleri, constructor, destructor/finalizer kavramı, properties, indexers, static üyeler ve static constructor.
+
+---
+
+### 8. Hafta
+
+Const, readonly, struct, class/struct farkları, enum, namespace, using, alias ve önemli System türleri.
+
+---
+
+### 9. Hafta
+
+Müfredatta net konu belirtilmemiştir.
+
+Uygun görürsen:
+
+* tekrar,
+* pekiştirme,
+* ara uygulama,
+* refactoring,
+* mini proje geliştirme
+
+haftası olarak değerlendir.
+
+Önerini önce belirt.
+
+---
+
+### 10. Hafta
+
+DateTime ve zaman işlemleri, BitConverter, Buffer, GC, I/O, dosya/klasör işlemleri, BinaryReader/BinaryWriter, Stream, Console işlemleri, string işlemleri, Split/Join, formatting ve Regex.
+
+---
+
+### 11. Hafta
+
+Nesne yönelimli programlama, nesne modeli, class library, inheritance, access modifiers, temel/türeyen sınıflar ve ilgili OOP kavramları.
+
+---
+
+### 12. Hafta
+
+Hiding, overriding, polymorphism, virtual, abstract, sealed, overloading/overriding farkı, interfaces ve interface inheritance.
+
+---
+
+### 13. Hafta
+
+Exception handling, try/catch/finally/throw, custom exceptions, delegates, multicast delegates, events, event-driven programming ve preprocessor directives.
+
+---
+
+### 14. Hafta
+
+Generics, iterators, anonymous methods, partial types, var, object/collection initializers, anonymous types, extension methods, lambda expressions, query expressions, LINQ ve dynamic.
+
+---
+
+### Ek / Veri Tabanı Haftası
+
+Veri tabanı modeli, ADO.NET, veri tabanı bağlantısı, komutlar, DataReader, DataSet, bağlantılı/bağlantısız erişim, CRUD, LINQ ile veri erişimi, Stored Procedure, Transaction ve null değerlerle çalışma.
+
+Bu bölümün 14 haftalık yapıya nasıl dahil edilmesinin daha mantıklı olacağını ayrıca değerlendir.
+
+---
+
+# Çok önemli öğretim kuralı
+
+Her yeni konu projede gerçek bir ihtiyacın çözümü gibi ortaya çıkmalıdır.
+
+Örneğin yeni bir kavram anlatılırken:
+
+1. Önce mevcut yaklaşımın problemi gösterilsin.
+2. Yeni kavram açıklansın.
+3. Küçük bir örnek verilsin.
+4. Ardından mevcut projeye uygulansın.
+5. Eski ve yeni yaklaşım arasındaki fark açıklansın.
+
+Öğrenci:
+
+**"Bunu neden öğreniyorum?"**
+
+sorusunun cevabını mümkün olduğunca görebilmelidir.
+
+---
+
+# İlk görevin
+
+Şimdilik hiçbir dosya veya proje oluşturma.
+
+İlk cevabında sadece:
+
+1. Proje için uygun isim alternatifleri,
+2. 3-5 farklı proje konusu,
+3. Her konunun kısa avantaj/dezavantajı,
+4. İHA Teknikerliği öğrencileri için uygunluğu,
+5. Başka bölümler için uygunluğu,
+6. Senin önerdiğin proje adı + proje konusu kombinasyonlarını,
+7. Kullanmayı önerdiğin .NET/C# sürümünü
+
+sun.
+
+Ardından benim kararımı bekle.
+
+**Ben açıkça “başla” demeden proje oluşturma ve kod yazma.**

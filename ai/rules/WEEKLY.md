@@ -7,4 +7,5 @@
 5. Müfredatta büyük kaydırma: gerekçe + kullanıcı onayı (`DECISIONS.md`).
 6. Hafta 9: yeni konu yok.
 7. Hafta 15: takvim yoksa atlanabilir; çekirdek dosya I/O ile biter.
-8. Test / ödev ayrı dosyası gerekiyorsa `docs/WeekXX/` altında; ikinci `.csproj` yok.
+8. Yeni haftaya başlamadan önce kök ana projenin tamamlanan hali `WeeklySnapshots/WeekXX/` altında çalışan solution/proje olarak korunur.
+9. `docs/WeekXX/` ders notudur; `WeeklySnapshots/WeekXX/` o haftanın çalışan kodudur.

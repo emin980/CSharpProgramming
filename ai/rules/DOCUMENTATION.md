@@ -5,7 +5,7 @@
 | Yer | Amaç |
 | --- | --- |
 | `ai/` | Oturum belleği; kısa, güncel, tek kaynak |
-| `docs/WeekXX/` | **Paylaşılabilir ders notu** — öğrenci evde okuyabilmeli, öğretmen sınıfta anlatabilmeli |
+| `docs/WeekXX/BPP2001-HaftaXX.docx` | **Paylaşılabilir Word ders notu** — öğrenci evde okuyabilmeli, öğretmen sınıfta anlatabilmeli |
 
 `prompt.txt` müfredat kaynağıdır.
 
@@ -19,18 +19,31 @@
 ## Hafta klasörü
 
 `docs/Week01`, `docs/Week02`, …  
-Her haftada:
+Her haftada **tek** öğrenci belgesi:
 
-- `README.md` — bu haftayı nasıl okuyacağınız (öğrenci + öğretmen)
-- 1–3 ders metni
-- Sorular, hatalar, alıştırmalar, özet
+- `BPP2001-HaftaXX.docx`
+- Kapak ve haftalık kazanımlar
+- Üç derslik konu anlatımı
+- Öğretmen notları
+- Sorular, yaygın hatalar, uygulamalar, cevap ipuçları ve özet
 
-## Kod blokları
+`docs/` altında Markdown ders notu tutulmaz. `ai/` dosyaları AI belleği olduğu için Markdown kalır.
 
-- Haftanın kilidine uy
-- Hafta 1 proje kodu yok; sözde kod ve düz dil serbest
-- “İleride şöyle olacak” diye kilitli C# sözdizimi gösterme
+## Word biçimi
+
+- A4, okunur başlık hiyerarşisi, sayfa numarası ve üst bilgi
+- Kod blokları eş aralıklı yazı tipi ve açık arka plan
+- Tablolar belirgin başlık satırıyla
+- Haftanın kilidine uy; Hafta 1 proje kodu yok
 
 ## Dil
 
-Türkçe anlatım. Kod kimlikleri İngilizce. Dosya adları ASCII.
+- Kurumsal, profesyonel ve akademik Türkçe kullan.
+- Türk Dil Kurumunun güncel yazım, imla ve noktalama kurallarına uy.
+- Devrik, eksiltili ve konuşma diline özgü cümlelerden kaçın; özne, yüklem ve anlam ilişkisini açık kur.
+- “Yapmak”, “bakmak”, “şey” gibi genel ifadeler yerine bağlama uygun, kesin fiiller kullan: gerçekleştirmek, incelemek, doğrulamak, yapılandırmak, değerlendirmek.
+- “Feedback”, “set etmek”, “organize etmek”, “snapshot” gibi gereksiz yabancı veya karma kullanımlar yerine geri bildirim, belirlemek, düzenlemek, haftalık sürüm gibi Türkçe karşılıkları tercih et.
+- Yerleşik teknik terimlerin Türkçe karşılığını önce ver; gerektiğinde İngilizce özgün terimi ilk kullanımda parantez içinde belirt: ortak dil çalışma ortamı (Common Language Runtime — CLR).
+- “Panik yok”, “mezarlık değildir”, “işi yutar”, “drama”, “tıkıştırmak” gibi konuşma dili, mizahi benzetme veya küçümseyici ifade kullanma.
+- Ciddi, saygın, ölçülü ve ikna edici bir ton koru; öğrenciyi küçümseme veya gereksiz samimiyet kurma.
+- Kod tanımlayıcıları İngilizce kalır. Dosya adları ASCII olabilir.

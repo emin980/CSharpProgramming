@@ -1,26 +1,16 @@
 # Henüz kullanılmaması gereken konular
 
-Aktif hafta **2**. `LEARNING.md` dışını kodda kullanma.
+Aktif hafta **15**. Çekirdek C# ve veritabanı müfredatı açılmıştır.
 
-## Dil (kilitli)
+## Kilitli
 
-- Tür dönüşümü, `checked`, boxing/unboxing, `Convert`, operatörler (Hafta 3)
-- `if` / `switch`, döngüler, diziler (Hafta 4) — `args` doldurulmaz
-- Metotlar, `ref` / `out` (Hafta 5) — `Main` hariç yeni metot yok
-- Overload, `params`, sınıf örneği, `this` (Hafta 6) — ikinci class yok
-- Constructor, property, indexer, `static` anlatımı (Hafta 7)
-- `const` / `readonly`, `struct`, `enum`, namespace yeniden adlandırma (Hafta 8)
-- `DateTime`, dosya I/O, Regex (Hafta 10)
-- Kalıtım (Hafta 11), polimorfizm / interface (Hafta 12)
-- Exception, delegate, event (Hafta 13)
-- Generics, `var`, lambda, LINQ, interpolation (`$""`), `dynamic` (Hafta 14)
-- ADO.NET (Hafta 15)
+- Müfredat dışı web, masaüstü arayüz, async/await ve bağımlılık ekleme
+
+`Hafta-Son` dönem sonu uygulamasında Windows Forms kullanımı kullanıcı tarafından ayrıca onaylanmıştır; bu sınırlamanın dışındadır.
 
 ## Stil
 
-- LINQ, expression-bodied, `record`, pattern matching, async
-- UI çerçeveleri, DI, katmanlı “enterprise”
-- Nullable `?` `??`
-- `ReadLine` + hesap (dönüşüm Hafta 3; yine de bu hafta girdi yok)
+- UI çerçeveleri, DI ve gereksiz kurumsal mimari
+- Müfredatta bulunmayan özellikleri öğretim gereksinimi olmadan eklemek
 
 `LOCKED.md` ile `LEARNING.md` çelişirse **kilit kazanır**.

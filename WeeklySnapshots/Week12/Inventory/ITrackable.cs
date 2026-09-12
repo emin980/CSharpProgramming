@@ -1,0 +1,1 @@
+namespace CSharpProgramming.Inventory { internal interface ITrackable : IIdentifiable { string GetTrackingCode(); } }

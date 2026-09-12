@@ -126,3 +126,10 @@ Hedef kavramlar (isimler sabit kalsın): `Equipment`, `Mission`, `Staff`; duruml
 - İki arayüz aynı uygulama ve altyapı servislerini kullanır. `Program.cs` yalnızca başlangıç ve arayüz seçimi sorumluluklarını taşır.
 - Ayrı `HangarDeskFinalDb` veritabanı, sürümlü SQL betikleri, Stored Procedure'ler ve LocalDB kullanılır.
 - İlk çalıştırmada yönetici oluşturulur. Parolalar PBKDF2-SHA256 ile korunur; yönetici, teknik personel ve görüntüleyici rolleri uygulanır.
+- Ekipman ve personel silme işlemleri fiziksel silme yerine `IsDeleted` alanıyla gerçekleştirilir; kullanıcı ekranları yalnızca etkin kayıtları gösterir.
+- Ürün ve personel görselleri en fazla 5 MB boyutunda ikili veri olarak SQL Server'da saklanır.
+- Windows Forms veri girişlerinde tarih, para, seçim ve onay alanlarına uygun denetimler kullanılır; iptal edilen pencereler işlem oluşturmaz.
+- Giriş ekranından oluşturulan bütün üyelikler varsayılan olarak Görüntüleyici rolünü alır. Yönetici ve Teknik Personel rolleri yalnızca bir yönetici oturumundan atanabilir.
+- Kullanıcı parolaları en az sekiz karakter, büyük harf, küçük harf ve rakam içermelidir. Kullanıcı kendi parolasını değiştirebilir; yönetici kullanıcı için geçici parola belirleyebilir.
+- Ekipman türleri serbest metin yerine pasif silme destekli merkezi materyal kataloğundan seçilir. Kullanımdaki türler silinemez; tür adı değiştiğinde bağlı etkin ekipmanlar transaction içinde güncellenir.
+- Windows Forms ekranlarında seçili ekipman ve personelin görseli ile temel bilgileri sabit ayrıntı panelinde gösterilir. Konsol arayüzü aynı görselleri dosyadan içe ve dosyaya dışa aktarır.

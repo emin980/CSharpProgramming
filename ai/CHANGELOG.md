@@ -2,6 +2,26 @@
 
 ## 2026-09-12 (Hafta-Son HangarDesk)
 
+- Hesap araç çubuğunun modül sekmelerini örtmesine neden olan Windows Forms yerleşim sorunu giderildi; araç çubuğu ve sekmeler ayrı satırlara taşındı
+- Ekipman ve personel sekmelerine seçili kayıtla otomatik değişen görsel ve ayrıntı paneli eklendi
+- Materyal türleri ayrı bir katalog hâline getirildi; ekleme, güncelleme ve pasif silme işlemleri eklendi
+- Ekipman oluşturma ve güncelleme ekranlarında materyal türü katalogdan seçilir hâle getirildi
+- Konsol uygulamasına materyal türü yönetimi, görsel içe/dışa aktarma, alış bedeli ve doğrulamalı tarih girişleri eklendi
+- `006_equipment_type_catalog.sql` sürümlü materyal kataloğu güncellemesi eklendi
+- Giriş ekranına Görüntüleyici rolüyle güvenli üyelik oluşturma paneli eklendi
+- Yönetici tarafından kullanıcı oluştururken geçici parola ve parola doğrulaması zorunlu kılındı
+- Yönetici dışındaki kullanıcıların yönetici veya teknik personel rolü ataması servis katmanında engellendi
+- Kullanıcının kendi parolasını değiştirmesi ve yöneticinin geçici parola belirlemesi sağlandı
+- İlk yönetici, giriş ve üyelik ekranlarına parola doğrulama ve parola görünürlüğü seçenekleri eklendi
+- Parola kuralları büyük harf, küçük harf, rakam ve en az sekiz karakter şartıyla güçlendirildi
+- `005_account_management.sql` sürümlü hesap yönetimi güncellemesi eklendi
+- Windows Forms veri girişleri metin istemleri yerine tarih, para, seçim, onay ve görsel denetimleriyle yenilendi
+- Başarılı değişikliklerden sonra bütün veri tablolarının otomatik yenilenmesi sağlandı
+- İptal ve pencereyi kapatma işlemlerinin veri girişi olarak değerlendirilmesi engellendi
+- Ekipman ve personel görsellerinin veritabanında saklanması, görüntülenmesi ve 5 MB dosya sınırı eklendi
+- Ekipman alış bedeli ve Türkçe tarih/para gösterimi eklendi
+- Ekipman ve personel silme işlemleri `IsDeleted` tabanlı pasif silmeye dönüştürüldü
+- `004_soft_delete_images_and_prices.sql` sürümlü veritabanı güncellemesi eklendi
 - `Hafta-Son/HangarDesk.Final.csproj` ve konsol/Windows Forms arayüz seçimi eklendi
 - Sürümlü SQL Server şeması ve Stored Procedure katmanı oluşturuldu
 - Güvenli ilk yönetici kurulumu, PBKDF2-SHA256 parola koruması, oturum ve rol denetimi uygulandı

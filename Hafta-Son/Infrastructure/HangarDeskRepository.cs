@@ -24,6 +24,15 @@ internal sealed class HangarDeskRepository
         connection.Open();
         return Convert.ToInt32(command.ExecuteScalar());
     }
+    public byte[] Bytes(string procedure, params SqlParameter[] parameters)
+    {
+        using SqlConnection connection = new(this.connectionString);
+        using SqlCommand command = new(procedure, connection) { CommandType = CommandType.StoredProcedure };
+        command.Parameters.AddRange(parameters);
+        connection.Open();
+        object result = command.ExecuteScalar();
+        return result == null || result == DBNull.Value ? null : (byte[])result;
+    }
     public UserCredential GetCredential(string username)
     {
         DataTable table = this.Table("dbo.usp_User_GetByUsername", P("@Username", username));
@@ -40,5 +49,20 @@ internal sealed class HangarDeskRepository
     {
         this.Scalar("dbo.usp_Audit_Create", P("@UserId", userId), P("@Action", action), P("@EntityName", entity), P("@EntityId", entityId), P("@Detail", detail));
     }
-    public static SqlParameter P(string name, object value) => new(name, value ?? DBNull.Value);
+    public static SqlParameter P(string name, object value)
+    {
+        SqlParameter parameter = new(name, value ?? DBNull.Value);
+        if (value == null && name == "@ImageData")
+        {
+            parameter.SqlDbType = SqlDbType.VarBinary;
+            parameter.Size = -1;
+        }
+        else if (value == null && name == "@PurchasePrice")
+        {
+            parameter.SqlDbType = SqlDbType.Decimal;
+            parameter.Precision = 18;
+            parameter.Scale = 2;
+        }
+        return parameter;
+    }
 }

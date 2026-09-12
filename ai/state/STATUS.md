@@ -9,10 +9,11 @@
 ## Şu an
 
 - Aktif hafta: **15**
-- Son iş: HangarDeskFinalDb, sürümlü kurulum, güvenlik, iş akışları ve konsol/Windows Forms arayüzleri tamamlandı
+- Son iş: Otomatik görsel ayrıntı panelleri, materyal türü kataloğu ve konsol özellik eşitliği tamamlandı
 - Sonraki iş: Kullanıcı değerlendirmesi ve isteğe bağlı görsel iyileştirmeler
 
 ## Bilinen kısıtlar
 
 - Hafta 4–14 için DOCX oluşturulmadı (kullanıcı kararı)
 - Bağlantı dizesi `appsettings.json` üzerinden değiştirilebilir
+- Ekipman ve personel görselleri 5 MB ile sınırlandırılmıştır
